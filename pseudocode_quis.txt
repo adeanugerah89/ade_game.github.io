@@ -1,0 +1,15 @@
+pseudocode 
+
+=================
+1. Buat 4 buah pertanyaan teka-teki beserta pilihan jawaban di dalam tag html 
+2. isikan value disetiap jawaban yang benar
+3. pemain memilih jawaban yang benar dari setiap pertanyaan
+4. jika tombol submit diklik maka proses 
+5. buat function submitQuiz 
+6. didalam function submitQuiz, buat function answerScore() untuk menerima parameter berupa  attribute name dari pertanyaan yang telah kita buat. 
+7. buat variable calcScore untuk menampung function answerScore(parameter) yang akan kita jumlahkan.
+8. buat function correctAnswer(param1,param2) yang menampung 2 parameter, param1 untuk id dari jawaban yang benar, param2 untuk nomor urut pertanyaan.
+9. cetak jawaban yang benar hanya jika jawaban yang dipilih salah (panggil correctAnswer function), jika function answerScore(attribute_name) sama dengan 0, cetak jawaban yang benar berdasarkan id,dan gunakan function correctAnswer(id_jawaban_yang_benar, nomor urut).
+10. buat variable penampung untuk classname dari setiap pertanyaan (questionCountArray), lalu buat variable untuk menampung hasil perulangan(questionCounter). jika variable i = 0 < var questionCountArray, tambahkan 1 untuk var questionCounter.
+11. buat variable penampung score( showScore )  yang berisi var calcScore dan var questionCounter.
+12. jika calcScore === questionCounter, tampilkan var showScore.
